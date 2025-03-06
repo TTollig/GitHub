@@ -10,7 +10,6 @@ type
   TForm1 = class(TForm)
     Button1: TButton;
     RichEdit1: TRichEdit;
-    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,16 +22,5 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TForm1.Button1Click(Sender: TObject);
-var
-  K: Integer;
-begin
-  for K := 1 to 5 do
-  begin
-    RichEdit1.Lines.Add(inttostr(k));
-  end;
-
-end;
 
 end.
